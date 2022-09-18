@@ -1,10 +1,6 @@
 .introducao {
-  max-width: 1200px;
   padding: 40px 20px;
-  margin: 0 auto;
-  display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 100px;
   align-items: center;
 }
 
@@ -28,7 +24,7 @@
 }
 
 .introducao p {
-  font-size: 1.5rem;
+  font-size: var(--font-size-default);
   color: #525252;
 }
 
@@ -41,6 +37,9 @@
 @media (max-width: 800px) {
   .introducao {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .introducao.container-grid {
     gap: 40px;
   }
 

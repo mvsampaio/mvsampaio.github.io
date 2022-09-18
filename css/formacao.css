@@ -4,12 +4,8 @@
 }
 
 .formacao-container {
-  max-width: 1200px;
   padding: 120px 20px;
-  margin: 0 auto;
-  display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 100px;
   position: relative;
 }
 
@@ -30,7 +26,7 @@
 }
 
 .formacao-texto {
-  font-size: 1.5rem;
+  font-size: var(--font-size-default);
   line-height: 1.33;
   max-width: 40ch;
   margin-bottom: 60px;
@@ -58,7 +54,7 @@
 }
 
 .faculdade-tipo {
-  font-size: 0.875rem;
+  font-size: var(--font-size-texto-simples);
   text-transform: uppercase;
   color: #a3a3a3;
   margin-bottom: 10px;
@@ -66,7 +62,7 @@
 
 .faculdade-curso {
   flex: 1;
-  font-size: 1.125rem;
+  font-size: var(--font-size-secundario);
   line-height: 1.4;
   margin-bottom: 40px;
   position: relative;
@@ -83,7 +79,7 @@
 }
 
 .faculdade-instituicao {
-  font-size: 1.125rem;
+  font-size: var(--font-size-secundario);
   color: #a3a3a3;
 }
 
@@ -92,7 +88,7 @@
 }
 
 .formacao-extra h3 {
-  font-size: 0.875rem;
+  font-size: var(--font-size-texto-simples);
   line-height: 1.4;
   color: #8f8f8f;
   text-transform: uppercase;
@@ -119,7 +115,7 @@
 }
 
 .formacao-extra li {
-  font-size: 1.125rem;
+  font-size: var(--font-size-secundario);
   line-height: 1.1;
   margin-bottom: 20px;
 }
@@ -137,6 +133,9 @@
   .formacao-container {
     grid-template-columns: 1fr;
     padding: 60px 20px;
+  }
+
+  .formacao-container.container-grid {
     gap: 40px;
   }
 
